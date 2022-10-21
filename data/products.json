@@ -1,0 +1,43 @@
+[
+    {
+        "id":"0",
+        "name":"Hipnosis",
+        "price":1200,
+        "quantity":1
+    },
+
+    {
+        "id":"1",
+        "name":"Barras",
+        "price":1200,
+        "quantity":1
+    },
+
+    {
+        "id":"2",
+        "name":"Armonizacion",
+        "price":1000,
+        "quantity":1
+    },
+
+    {
+        "id":"3",
+        "name":"Reiki Embarazadas",
+        "price":1500,
+        "quantity":1
+    },
+
+    {
+        "id":"4",
+        "name":"Reiki Embarazadas",
+        "price":1500,
+        "quantity":1
+    },
+    
+    {
+        "id":"5",
+        "name":"Sanacion Adolescentes",
+        "price":1400,
+        "quantity":1
+    }
+]

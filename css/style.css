@@ -1,0 +1,226 @@
+/* Estilos del body y generales */
+body {
+  background-color: skyblue;
+  font-family: "Raleway", sans-serif;
+}
+.none {
+  display: none;
+}
+
+#tittleContainer img {
+  width: 13rem;
+  height: 13rem;
+}
+
+/* Estilos de alertas */
+.pAlert {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  padding: 0.5rem;
+  margin: 0px;
+  position: fixed;
+  background-color: rgb(226, 198, 145);
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(83, 83, 83, 0.705);
+}
+.imgAlert {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.75rem;
+}
+
+/* Estilos de la API, titulo y carrito */
+#headerContainer {
+  display: grid;
+  grid-template-columns: 13.75rem 3.75rem 15.75rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 0px;
+}
+#cartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+}
+#totalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+#counterTotal {
+  font-size: 1rem;
+}
+#imgCart {
+  margin-right: 0.5rem;
+  width: 2rem;
+}
+#h2Cart {
+  font-size: 1.5rem;
+}
+#btnContainer {
+  display: flex;
+  justify-content: center;
+}
+.btnCart {
+  padding: 0.25rem;
+  margin: 0.75rem;
+  font-size: 0.75rem;
+  background-color: rgb(224, 215, 196);
+  border-radius: 0.33rem;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.473);
+}
+.btnCart:hover {
+  transform: scale(1.1);
+  transition: 200ms;
+}
+#cartDOM {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0.6rem;
+}
+#cart {
+  list-style-image: url(https://i.ibb.co/WWG42pv/audio-track.png);
+  background-color: rgb(241, 237, 227);
+  border-radius: 3px;
+  padding: 1rem 1.5rem 1rem 2rem;
+  display: none;
+  box-shadow: 2px 2px 5px rgba(87, 87, 87, 0.678);
+  font-weight: bold;
+}
+#tittleContainer {
+  display: grid;
+  justify-items: center;
+}
+#imgTittle {
+  margin-right: 1.25rem;
+}
+#weatherContainer {
+  display: grid;
+}
+#weather {
+  display: grid;
+  justify-items: center;
+  padding: 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-image: url(https://i.ibb.co/XpYCQS0/Cloud-ok.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+/* Estilos de las cards de productos */
+.divCards {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  width: 75rem;
+  margin: 0 auto;
+}
+.cardContainer {
+  text-align: center;
+  padding: 1.25rem;
+  margin: 1.25rem;
+}
+.addButton {
+  width: 5rem;
+  padding: 0.33rem;
+  background-color: rgb(221, 206, 218);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.815);
+  border: none;
+}
+.addButton:hover {
+  transform: scale(1.1);
+  transition: 200ms;
+}
+.products {
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 2rem 5rem 2rem;
+  box-shadow: 2px 2px 6px rgba(51, 51, 51, 0.733);
+}
+.products.sanacion {
+  background-image: url(./img/logo1.ico);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12rem;
+  height: 18rem;
+}
+.products.sanacion img {
+  width: 10rem;
+  height: 8rem;
+}
+.products.armonizacion {
+  background-image: url(./img/logo1.ico);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12rem;
+  height: 18rem;
+}
+
+.products.armonizacion img {
+  width: 10rem;
+  height: 8rem;
+}
+
+.products.niños {
+  background-image: url(./img/logo1.ico);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12rem;
+  height: 18rem;
+}
+
+.products.niños img {
+  width: 10rem;
+  height: 8rem;
+}
+
+/* Estilos del footer */
+.footer {
+  display: flex;
+  background-color: rgb(228, 224, 217);
+  justify-content: center;
+  margin: 0px;
+  border-radius: 8px;
+}
+footer {
+  background-color: skyblue;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+footer div {
+  text-align: left;
+  margin-left: 10px;
+}
+footer i {
+  width: 14px;
+  height: 14px;
+  color: black;
+}
+footer span {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+footer a {
+  /*margin-left: 10px;*/
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  /*margin-left: 10px;*/
+  text-decoration: solid;
+  color: black;
+  font-size: 1.25rem;
+}

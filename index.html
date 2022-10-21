@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="./fontawesome-free-6.1.1-web/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="./fontawesome-free-6.1.1-web/css/brands.min.css" rel="stylesheet" />
+    <link href="./fontawesome-free-6.1.1-web/css/solid.min.css" rel="stylesheet" />
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Alerts de carrito-->
+    <div id="alert" class="none">
+        <p class="pAlert">
+            <img src="./img/carrito.png" alt="carrito" class="imgAlert">
+            El servicio a sido Agregado
+        </p>
+    </div>
+    <div class="none" id="noCart">
+        <p class="pAlert">
+            <img src="./img/carrito.png" alt="carrito" class="imgAlert">
+            Su carrito de compra esta vacio
+        </p>
+    </div>
+
+    <!--Header carrito, titulo del sitio y API del clima-->
+    <div id="headerContainer">
+        <!--Header carrito-->
+        <div>
+            <div id="cartHeader">
+                <img src="./img/carrito.png" alt="carrito" id="imgCart">
+                <h2 id="h2Cart">Carrito</h2>
+                <div id="counter" style="margin: 1rem;"></div>
+            </div>
+            <div id="totalContainer">
+                <h3 id="total">TOTAL= $ 0</h3>
+            </div>
+            <div id="btnContainer">
+                <button id="showCart" class="btnCart">Mostrar Compras</button>
+                <button id="removeCart" class="btnCart">Vaciar Compras</button>
+            </div>
+        </div>
+        <!--Titulo de la tienda-->
+        <div id="tittleContainer"> 
+            <img src="./img/logo.jpeg" alt="Logo Getsha" id="imgTittle">
+            <h1>
+                Espacio Getsha Uruguay ❤️❤️❤️
+            </h1>
+        </div>
+        <!--API Clima-->
+        <div id="wheaterContainer"> 
+            <div id="weather">
+                <img src="" alt="" id="icono">
+            </div>
+        </div>
+    </div>
+
+    <!--HTML vacio para la creacion dinamica del carrito a traves de JS-->
+    <div id="cartDOM">
+        <ul id="cart">    
+        </ul>
+    </div>
+
+    <!--Contenedor de tarjetas-->
+    <div class="divCards"> 
+        
+        <div class="cardContainer">
+            <h2>Sanacion</h2>
+            
+            <div class= "products sanacion"">
+                <img src="./img/productos/hipnosis.jpg" alt="Hipnosis">
+                <h3>Hipnosis</h3>
+                <p>Duracion 45'</p>
+                <p>1200 $</p>
+                <button class= "addButton" id="0">Agregar Compra</button>
+            </div>
+            
+            <div class= "products sanacion">
+                <img src="./img/productos/barras.jpg" alt="barras">
+                <h3>Barras </h3>
+                <p>Duracion 60'</p>
+                <p>1200 $</p>
+                <button class= "addButton" id="1">Agregar Compra</button>
+            </div>
+        </div>
+        <!--Armonizacion Personal-->
+        <div class="cardContainer">
+            <h2>Armonizacion Personal</h2>
+            
+            <div class= "products armonizacion">
+                <img src="./img/productos/armonizacion.jpg" alt="Armonizacion">
+                <h3>Armonizacion</h3>
+                <p>1000 $</p>
+                <button class= "addButton" id="2">Agregar Compra</button>
+            </div>
+            
+            <div class= "products armonizacion">
+                <img src="./img/productos/reiki.jpg" alt="Reiki Embarazadas">
+                <h3>Reiki Embarazadas</h3>
+                <p>1500 $</p>
+                <button class= "addButton" id="3">Agregar Compra</button>
+            </div> 
+        </div>
+        
+        <div class="cardContainer">
+            <h2>Niños</h2>
+            
+            <div class= "products niños">
+                <img src="./img/productos/reiki_ninos.jpg" alt="Reiki para Niños ">
+                <h3>Reiki Niños</h3>
+                <p>800 $</p>
+                <button class= "addButton" id="4">Agregar Compra</button>
+            </div>
+            
+            <div class= "products niños">
+                <img src="./img/productos/sanacion.jpg" alt="Sanacion Adolecentes">
+                <h3>Sanacion Adolescentes</h3>
+                <p>1400 $</p>
+                <button class= "addButton" id="5">Agregar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div>
+          <i class="fa-brands fa-twitter text-left"></i>
+          <span><a target="_blank" href="https://www.twitter.com/EGetsha">Tw: EGetsha </a></span>
+        </div>
+        <div>
+          <i class="fa-brands fa-facebook text-left"></i>
+          <span> <a target="_blank" href="https://www.facebook.com/espacioterapeuticogetsha">Fb: Espacio Getsha</a></span>
+        </div>
+        <div>
+          <i class="fa-brands fa-instagram text-left"></i>
+          <span> <a target="_blank" href="https://www.instagram.com/espacio_getsha/"> Ig: Espacio_Getsha </a></span>
+        </div>
+        <div>
+          <i class="fa-solid fa-map-pin"></i>
+          <span><a target="_blank"
+              href="https://www.google.com.uy/maps/place/Hospital+Vilardeb%C3%B3/@-34.879348,-56.1900094,17z/data=!3m1!4b1!4m5!3m4!1s0x959f80113d26a0c1:0x94f6aab980747da7!8m2!3d-34.879348!4d-56.1878207?hl=es-419">Ubicacion
+            </a>
+          </span>
+        </div>
+        <span>Copyright &copy; Victor Guala - 2022</span>
+      </footer>
+
+    <!--Script JS-->
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
